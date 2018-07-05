@@ -1,8 +1,8 @@
 # STEP 1 build executable binary
 
 FROM golang:alpine As builder 
-COPY . $GOPATH/src/github.com/mitchybawesome/http-server/
-WORKDIR $GOPATH/src/github.com/mitchybawesome/http-server/
+COPY . $GOPATH/src/github.com/benphunter/go-http-server/
+WORKDIR $GOPATH/src/github.com/benphunter/go-http-server/
 
 RUN apk add --no-cache git mercurial
 
